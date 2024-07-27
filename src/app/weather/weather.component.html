@@ -1,0 +1,73 @@
+<!-- <div class="weather-container">
+    <div class="weather-box">
+        <div class="weather-details">
+            <div class="weather-detail">
+
+                <h2>Weather Application using Angular 16 + openweathermap api</h2>
+                <div class="search-bar">
+                    <input type="text" name="City" placeholder="Enter the city name" [(ngModel)]="city"
+                        class="city-input" />
+                    <button (click)="getWeather()" class="get-weather-button">Get Weather</button>
+                </div>
+
+                <ul class="weather-list">
+                    <li><strong>City:</strong>{{weatherInformation.name}}</li>
+                    <li><strong>Country:</strong>{{weatherInformation.sys.country}}</li>
+                    <li><strong>Temperature:</strong>{{weatherInformation.main.temp}}</li>
+                    <li><strong>Feels Like:</strong>{{weatherInformation.main.feels_like}}</li>
+                    <li><strong>Humidity:</strong>{{weatherInformation.main.humidity}}</li>
+                    <li><strong>Wind Speed:</strong>{{weatherInformation.wind.speed}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="weather-container">
+    <div class="weather-box">
+      <div class="weather-details">
+        <div class="weather-detail">
+  
+          <h2>Weather Application using Angular 16 + openweathermap.org api</h2>
+          <div class="search-bar">
+            <input type="text" name="City" placeholder="Enter the city name" [(ngModel)]="city"
+                   class="city-input" />
+            <button (click)="getWeather()" class="get-weather-button">Get Weather</button>
+          </div>
+  
+          <table *ngIf="weatherInformation">
+            <tr>
+              <th>Parameter</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>City</td>
+              <td>{{ weatherInformation.name }}</td>
+            </tr>
+            <tr>
+              <td>Country</td>
+              <td>{{ weatherInformation.sys.country }}</td>
+            </tr>
+            <tr>
+              <td>Temperature</td>
+              <td>{{ weatherInformation.main.temp }} °C</td>
+            </tr>
+            <tr>
+              <td>Feels Like</td>
+              <td>{{ weatherInformation.main.feels_like }} °C</td>
+            </tr>
+            <tr>
+              <td>Humidity</td>
+              <td>{{ weatherInformation.main.humidity }}%</td>
+            </tr>
+            <tr>
+              <td>Wind Speed</td>
+              <td>{{ weatherInformation.wind.speed }} m/s</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  

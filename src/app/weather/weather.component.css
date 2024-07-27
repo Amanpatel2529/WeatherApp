@@ -1,0 +1,135 @@
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f0f0f0, #fff); /* Add a gradient background */
+  font-family: sans-serif;
+}
+
+.weather-box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc; /* Add a border to the box */
+}
+
+.weather-details {
+  text-align: center;
+}
+
+.weather-detail {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  padding: 10px;
+  margin: 10px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between; /* Distribute elements horizontally */
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.city-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 70%; /* Adjust width as needed */
+}
+
+.get-weather-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3f51b5; /* Adjust button color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer; /* Indicate clickable element */
+}
+
+.get-weather-button:hover {
+  background-color: #283776; /* Button hover effect */
+}
+
+.weather-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weather-list li {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  margin-bottom: 10px;
+}
+
+.weather-list li strong {
+  font-weight: bold;
+}
+
+.weather-list li {
+  font-size: 16px; /* Adjust font size for better readability */
+  width: 100%;
+}
+
+/* Styling for the new title */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Removing commented code for the weather image (if you want to use it)**
+.weather-image {
+  width: 50%;
+  height: auto;
+  margin-top: 10px;
+  object-fit: cover;
+}
+*/
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .weather-container {
+    padding: 20px;
+  }
+
+  .weather-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .weather-details {
+    text-align: left;
+  }
+
+  .weather-list li {
+    display: block;
+  }
+
+  .get-weather-button {
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
