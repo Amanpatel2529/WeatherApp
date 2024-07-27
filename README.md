@@ -2,6 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
+
+## Project Description
+
+**Weather App using Angular and OpenWeatherMap API**
+
+This project demonstrates a simple weather application built using Angular. It fetches weather data from the OpenWeatherMap API based on a user-entered city. The application displays essential weather information such as city, country, temperature, feels like, humidity, and wind speed in a user-friendly table format. 
+
+**Key features:**
+
+* User input for city search
+* Fetches weather data using OpenWeatherMap API
+* Displays weather information in a clear and organized table format
+* Basic error handling for API requests
+
+This project serves as a foundation for building more complex weather applications with additional features like weather forecasts, maps, and visualizations.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
